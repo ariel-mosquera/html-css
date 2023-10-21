@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexíveis</title>
+</head>
+<body>
+    <h1>Criando imagens flexíveis</h1>
+<p>Neste site irei criar uma imagem adaptavel</p>
+<picture>
+    <source media="(max-width: 400px)" srcset="imagens/paisagem-p.png" type="image/png">
+    <source media="(max-width: 790px)" srcset="imagens/paisagem-m.png" type="image/png">
+    <img src="imagens/paisagem-g.png">
+</picture>
+<h1>Teste nº2</h1>
+<p>Imagem que eu fiz</p>
+<picture>
+    <source media="(max-width: 400px)" srcset="imagens/googleimg-p.jpg">
+    <source media="(max-width: 850px)" srcset="imagens/googleimg-m.jpg">
+    <img src="imagens/googleimg.jpg" alt="imagem do google fodase">
+</picture>
+</body>
+</html>

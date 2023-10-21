@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links e âncoras</title>
+</head>
+<body>
+    <h1>Link externo</h1>
+        <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf" rel="external">acesse o site do gustavo guanabara github
+        </a>
+    <h1>link com referencia de idioma</h1>
+        <a href="https://www.cbr.com/batman-robin-best-storylines-in-comics/" hreflang="en"> melhores momentos do batman e robin (em inglês)
+        </a>
+    <h1>Destino dos links</h1>
+    <p>São 5 formas de abrir os links:</p>
+    <dl>
+        <dt>_blank
+            <dd>abre em uma nova aba</dd>
+        <dt>_self
+            <dd>vai abrir o link na aba atual (forma padrão)</dd>
+        <dt>_top
+            <dd>vai desfazer todos os frames e abrir o destino em uma nova janela</dd>
+        <dt>_parent
+            <dd>similar ao uso do <strong>_top</strong> em uma referência a janela mãe</dd>
+        <dt>nome-do-frame
+            <dd>caso esteja usando frames indicar o nome da janela ao abrir</dd>
+    </dl>
+    <p>e tudo isso acompanhado do atributo <code>target</code></p>
+        <h2>Exemplos:</h2>
+            <a href="https://gustavoguanabara.github.io/" hreflang="en-US" target="_blank"> abrir repositorio guanabara em uma nova aba</a><hr>
+            <a href="https://gustavoguanabara.github.io/" hreflang="en-US" target="_self"> continuar navegando no site do respositorio guanabara</a>
+    <h1>links internos</h1>
+        <p>Faça um clique para acessar a <a href="pag002.html" hreflang="pt-br" target="_self" rel="next">pagina 2</a></p>
+    <h1>Downloads</h1>
+    <ul>
+        <li><a href="./livro/meu_livro.pdf" download="meu_livro.pdf" type="application/pdf">Meu livro em pdf</a></li>
+        <li><a href="./livro/meu_livro.zip" download="meu_livro.zip" type="application/zip">Meu livro compactado</a></li>
+    </ul>
+</body>
+</html>
