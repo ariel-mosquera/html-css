@@ -48,6 +48,7 @@ section {
 
 section p {
     width: 180px;
+    margin-bottom: 20px;
 }
 
 section#img1 {
@@ -56,4 +57,31 @@ section#img1 {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+section.imagem p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.313);
+    padding: 10px;
+}
+
+section.imagem {
+    box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.549);
+}
+
+section#img2 {
+    background: black url(imagens/background002.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+footer {
+    font-family: var(--fonte-padrao);
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+footer p {
+    padding: 7px;
+    font-weight: bold;
 }
