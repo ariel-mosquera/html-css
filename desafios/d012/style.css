@@ -6,7 +6,7 @@
 
 :root {
 
-    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
 
     --fonte-destaque: 'Passion One', cursive;
 
@@ -19,12 +19,12 @@
     font-size: 1em;
 }
 
-body {
-    font-family: var(--fonte-corpo);
+html, body {
+    font-family: var(--fonte-padrao);
+    min-height: 100vh;
 }
 
 header {
-    font-family: var(--fonte-destaque);
     margin: 0px auto 10px auto;
     text-align: center;
     color: white;
@@ -39,34 +39,41 @@ header a {
 
 header h1 {
     font-size: 3em;
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte-destaque);
 }
 
 section {
-    padding: 20px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 10px;
     margin: 20px 0px 20px 0px;
+    line-height: 2em;
+    font-family: var(--fonte-corpo);
+    font-size: 2em;
 }
 
 section p {
-    width: 180px;
+    width: 400px;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 section#img1 {
-    background-image: url(imagens/background001.jpg);
-    background-position: center center;
-    background-attachment: fixed;
+    background: black url(imagens/background001.jpg) center center no-repeat fixed;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 section.imagem p {
     color: white;
     background-color: rgba(0, 0, 0, 0.313);
-    padding: 10px;
+
 }
 
 section.imagem {
     box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.549);
+    background-color: white;
 }
 
 section#img2 {
@@ -83,5 +90,14 @@ footer {
 
 footer p {
     padding: 7px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
     font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
