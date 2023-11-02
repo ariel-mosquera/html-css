@@ -38,7 +38,7 @@ header a {
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 10vw;
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte-destaque);
@@ -51,12 +51,11 @@ section {
     margin: 20px 0px 20px 0px;
     line-height: 2em;
     font-family: var(--fonte-corpo);
-    font-size: 2em;
+    font-size: 2.5vw;
 }
 
 section p {
-    width: 400px;
-    margin-bottom: 20px;
+    display: inline-block;
     padding: 20px;
 }
 
@@ -68,11 +67,12 @@ section#img1 {
 section.imagem p {
     color: white;
     background-color: rgba(0, 0, 0, 0.313);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.751);
 
 }
 
 section.imagem {
-    box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.549);
+    box-shadow: inset 1px 6px 4px rgba(0, 0, 0, 0.549);
     background-color: white;
 }
 
@@ -92,12 +92,12 @@ footer p {
     padding: 7px;
 }
 
-footer a {
+footer a, header a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
-footer a:hover {
+footer a:hover, header a:hover {
     text-decoration: underline;
 }
